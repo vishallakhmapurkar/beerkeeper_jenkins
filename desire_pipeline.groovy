@@ -16,8 +16,8 @@ pipeline {
                 }    
             }
             steps{
-                sh "pip install -r $WORKSPACE/python-ip-script/requirements.txt"
-                sh "python $WORKSPACE/python-ip-script/main.py"
+                sh "pip install -r $WORKSPACE/requirements.txt"
+                sh "python $WORKSPACE/main.py"
             }
         }
             
